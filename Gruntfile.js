@@ -2,12 +2,12 @@ module.exports = function (grunt) {
     grunt.initConfig({
         broccoli_build: {
             build: {
-                dest: 'build/'
+                dest: 'tests/compare/actual/'
             }
         },
 
         clean: {
-            build: 'build/',
+            build: 'tests/compare/actual/',
             tmp  : 'tmp/'
         }
     });
@@ -15,5 +15,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-broccoli-build');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('default', ['clean', 'broccoli_build', 'clean:tmp']);
+    grunt.registerTask('build', ['clean', 'broccoli_build', 'clean:tmp']);
+    grunt.registerTask('default', ['build']);
 };
