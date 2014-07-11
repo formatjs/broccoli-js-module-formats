@@ -1,3 +1,8 @@
+/*
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yahoo/broccoli-js-module-formats/blob/master/LICENSE.md
+*/
 module.exports = function (grunt) {
     grunt.initConfig({
         broccoli_build: {
