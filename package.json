@@ -1,8 +1,32 @@
 {
     "name": "broccoli-js-module-formats",
     "version": "0.0.1",
-    "private": true,
     "license": "BSD-3-Clause",
+    "homepage": "https://github.com/yahoo/broccoli-js-module-formats",
+    "author": "Juan Dopazo <dopazo.juan@gmail.com> (http://github.com/juandopazo)",
+    "contributors": [
+        "Caridy Patino <caridy@gmail.com>"
+    ],
+    "repository": {
+        "type": "git",
+        "url" : "git://github.com/yahoo/broccoli-js-module-formats.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yahoo/broccoli-js-module-formats/issues"
+    },
+    "keywords": [
+        "broccoli",
+        "broccoli-plugin",
+        "ecmascript",
+        "es6",
+        "modules",
+        "analizer"
+    ],
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "files": ["lib", "LICENSE.md"],
+    "main": "lib/index.js",
     "scripts": {
         "test": "grunt && _mocha tests/ --reporter spec"
     },
